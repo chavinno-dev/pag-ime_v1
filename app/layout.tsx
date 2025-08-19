@@ -124,10 +124,11 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
             <span className="font-bold text-purple-700 text-xl tracking-wide">
               Señorita Fisio MX
             </span>
+            {/* Navbar: rutas absolutas con trailing slash para export estático */}
             <div className="hidden md:flex gap-6">
               <a href="/" className="hover:text-pink-600">Inicio</a>
-              <a href="/servicios" className="hover:text-pink-600">Servicios</a>
-              <a href="/galeria" className="hover:text-pink-600">Galería &amp; Contacto</a>
+              <a href="/servicios/" className="hover:text-pink-600">Servicios</a>
+              <a href="/galeria/" className="hover:text-pink-600">Galería &amp; Contacto</a>
             </div>
           </div>
         </nav>
